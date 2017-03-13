@@ -1,24 +1,24 @@
 <?php
-/*
-
-http://wplms26.com/wp-content/plugins/aboutcg-2017/libss/
-
+/**
+ * @Author: suifengtec
+ * @Date:   2017-03-12 16:34:35
+ * @Last Modified by:   suifengtec
+ * @Last Modified time: 2017-03-14 02:51:18
  */
 
 
-header("Content-type: text/html; charset=utf-8");
-
-/*header('Content-type: application/json; charset=utf-8');
+/*header("Content-type: text/html; charset=utf-8");
 */
+header('Content-type: application/json; charset=utf-8');
+
 defined('AOP_SDK_DEV_MODE') || define('AOP_SDK_DEV_MODE', false);
-
-
 
 require_once __DIR__. DIRECTORY_SEPARATOR.'lib/SignData.php';
 require_once __DIR__. DIRECTORY_SEPARATOR.'lib/EncryptParseItem.php';
 require_once __DIR__. DIRECTORY_SEPARATOR.'lib/AopClient.php';
 require_once __DIR__. DIRECTORY_SEPARATOR.'lib/ZhimaCreditAntifraudVerifyRequest.php';
 
+/*==========================助手函数==================================*/
 function get_zhima_user_true_name_data(){
 
 		/*
@@ -77,7 +77,7 @@ function get_zhima_user_email_data(){
 
 
 }
-
+/*===================================================================*/
 
 /*
 !empty($_POST) 
