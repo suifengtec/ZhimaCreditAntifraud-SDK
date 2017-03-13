@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * modified by suifengtec 
+ * @link( Simple SDK , https://github.com/suifengtec/ZhimaCreditAntifraud-SDK)
+ */
 require_once __DIR__.DIRECTORY_SEPARATOR.'AopEncrypt.php';
 
 class AopClient {
