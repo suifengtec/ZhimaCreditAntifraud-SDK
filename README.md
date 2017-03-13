@@ -7,12 +7,11 @@
 ```
 
 defined('AOP_SDK_DEV_MODE') || define('AOP_SDK_DEV_MODE', false);
-defined('ZHIMA_AF_SDK_BASE_DIR') || define('ZHIMA_AF_SDK_BASE_DIR', __DIR__. DIRECTORY_SEPARATOR);
 
-require_once ZHIMA_AF_SDK_BASE_DIR.'SignData.php';
-require_once ZHIMA_AF_SDK_BASE_DIR'EncryptParseItem.php';
-require_once ZHIMA_AF_SDK_BASE_DIR'AopClient.php';
-require_once ZHIMA_AF_SDK_BASE_DIR'ZhimaCreditAntifraudVerifyRequest.php';
+require_once __DIR__. DIRECTORY_SEPARATOR.'lib/SignData.php';
+require_once __DIR__. DIRECTORY_SEPARATOR.'lib/EncryptParseItem.php';
+require_once __DIR__. DIRECTORY_SEPARATOR.'lib/AopClient.php';
+require_once __DIR__. DIRECTORY_SEPARATOR.'lib/ZhimaCreditAntifraudVerifyRequest.php';
 
 
 ```
@@ -29,8 +28,7 @@ $c->appId = '20170***';
 $c->rsaPrivateKey =  'MIIEoQIBAAKCAQEAw***';
 $c->alipayrsaPublicKey =  'MIGfMA0GCSqGSIb3DQEBAQUAA***';
 $c->encryptKey =  'JCbiDpmAo***';
-/*就放在同一个目录下*/
-$c->alipayPublicKey =  ZHIMA_AF_SDK_BASE_DIR .'alipayPublicKey.pem';
+$c->alipayPublicKey =  __DIR__. DIRECTORY_SEPARATOR .'alipayPublicKey.pem';
 /*============================================================*/
 
 
